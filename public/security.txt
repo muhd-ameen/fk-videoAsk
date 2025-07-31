@@ -1,0 +1,85 @@
+# Security Policy
+
+## Reporting Security Vulnerabilities
+
+If you discover a security vulnerability in this project, please report it responsibly:
+
+1. **DO NOT** create a public GitHub issue
+2. Email security concerns to: [your-email@domain.com]
+3. Include detailed information about the vulnerability
+4. Allow reasonable time for the issue to be addressed
+
+## Security Measures Implemented
+
+### Input Validation & Sanitization
+- XSS prevention through input sanitization
+- SQL injection prevention
+- File upload validation
+- Form data validation and sanitization
+
+### Authentication & Authorization
+- Secure password requirements
+- Rate limiting on authentication attempts
+- Row Level Security (RLS) in database
+- Proper session management
+
+### File Upload Security
+- File type validation (MIME type + extension)
+- File size limits (100MB max)
+- Secure file naming
+- Virus scanning ready (implement with ClamAV)
+
+### Content Security Policy
+- Strict CSP headers implemented
+- XSS protection
+- Clickjacking prevention
+- Mixed content prevention
+
+### Data Protection
+- Environment variable validation
+- Secure token generation
+- Input length limits
+- SQL injection prevention
+
+## Security Best Practices for Deployment
+
+### Environment Variables
+- Never commit `.env` files
+- Use strong, unique keys for production
+- Rotate keys regularly
+- Use environment-specific configurations
+
+### Database Security
+- Enable Row Level Security (RLS)
+- Use prepared statements
+- Regular security updates
+- Database connection encryption
+
+### Network Security
+- Use HTTPS in production
+- Implement proper CORS policies
+- Use secure headers
+- Regular security audits
+
+### Monitoring & Logging
+- Log security events
+- Monitor for suspicious activity
+- Set up alerts for security incidents
+- Regular security assessments
+
+## Supported Versions
+
+| Version | Supported          |
+| ------- | ------------------ |
+| 1.x.x   | :white_check_mark: |
+| < 1.0   | :x:                |
+
+## Security Updates
+
+Security updates will be released as soon as possible after discovery and verification of vulnerabilities.
+
+## Contact
+
+For security-related questions or concerns:
+- Email: [your-email@domain.com]
+- Security Advisory: Create a private security advisory on GitHub
